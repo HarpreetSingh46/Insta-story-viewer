@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color : white
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(71, 71, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 450px;
+    width: 300px;
+   /* background-color: hwb(0 100% 0%);*/
+    border-radius: 15px;
+    border: 3px solid #000;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 1400% 1400%;
+  animation: rainbowShift 8s ease infinite;
+
+
+}
+@keyframes rainbowShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#storiyan{
+    height: 120px;
+    width: 91%;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+   
+
+    
+}
+
+#storiyan::-webkit-scrollbar{  /* use this property for hide scroller bottom from stories */
+    display: none;
+} 
+.story{
+   border: 3px solid red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+.story img{
+    height: 122%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover ;
+    background-position: center;
+    position: absolute;
+    display: none;
+
+
+}
